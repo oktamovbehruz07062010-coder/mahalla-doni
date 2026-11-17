@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Non (tandir)",
+    "price": 4000,
+    "unit": "dona",
+    "category": "Non"
+  },
+  {
+    "id": 2,
+    "name": "Sut 1 litr",
+    "price": 11000,
+    "unit": "dona",
+    "category": "Sut mahsulotlari"
+  },
+  {
+    "id": 3,
+    "name": "Qatiq 0.5 litr",
+    "price": 7000,
+    "unit": "dona",
+    "category": "Sut mahsulotlari"
+  },
+  {
+    "id": 4,
+    "name": "Tuxum 10 dona",
+    "price": 22000,
+    "unit": "paket",
+    "category": "Sut mahsulotlari"
+  },
+  {
+    "id": 5,
+    "name": "Guruch 1 kg",
+    "price": 16000,
+    "unit": "kg",
+    "category": "Oziq-ovqat"
+  },
+  {
+    "id": 6,
+    "name": "Shakar 1 kg",
+    "price": 14000,
+    "unit": "kg",
+    "category": "Oziq-ovqat"
+  },
+  {
+    "id": 7,
+    "name": "Osimlik yogi 1 litr",
+    "price": 18000,
+    "unit": "dona",
+    "category": "Oziq-ovqat"
+  },
+  {
+    "id": 8,
+    "name": "Choy 100 g",
+    "price": 12000,
+    "unit": "dona",
+    "category": "Ichimliklar"
+  },
+  {
+    "id": 9,
+    "name": "Mineral suv 1.5 litr",
+    "price": 5000,
+    "unit": "dona",
+    "category": "Ichimliklar"
+  },
+  {
+    "id": 10,
+    "name": "Kartoshka 1 kg",
+    "price": 6000,
+    "unit": "kg",
+    "category": "Sabzavot"
+  }
+]

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mahalla do'koni</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <h1 class="logo">Mahalla do'koni</h1>
+      <button class="light" id="open-cart">Savat (<span id="cart-count">0</span>)</button>
+    </div>
+  </header>
+
+  <main>
+    <input class="search" id="search" type="search" placeholder="Mahsulot qidirish">
+    <div class="filters" id="filters"></div>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>Mahsulot topilmadi</p>
+  </main>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="panel" id="panel" aria-label="Savat">
+    <div class="panel-head">
+      <h2>Savat</h2>
+      <button class="ghost" id="close-cart">Yopish</button>
+    </div>
+    <div class="panel-body">
+      <div id="cart-items"></div>
+      <div class="total"><span>Jami</span><span id="cart-total">0 so'm</span></div>
+
+      <form id="order-form">
+        <label for="f-name">Ismingiz</label>
+        <input id="f-name" name="name" required maxlength="60">
+        <label for="f-phone">Telefon</label>
+        <input id="f-phone" name="phone" type="tel" required placeholder="+998 90 123 45 67">
+        <label for="f-address">Manzil</label>
+        <input id="f-address" name="address" required maxlength="200">
+        <label for="f-comment">Izoh (ixtiyoriy)</label>
+        <textarea id="f-comment" name="comment" rows="2" maxlength="300"></textarea>
+        <button type="submit" id="submit-btn" style="width:100%;margin-top:14px">Buyurtma berish</button>
+      </form>
+      <div id="msg"></div>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>

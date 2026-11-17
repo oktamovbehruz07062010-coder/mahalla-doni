@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin: Mahalla do'koni</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <h1 class="logo">Admin sahifa</h1>
+      <a href="/" style="color:#fff">Do'konga qaytish</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="login">
+      <form id="login-form" style="max-width:320px">
+        <label for="pw">Parol</label>
+        <input id="pw" type="password" required>
+        <button type="submit" style="width:100%;margin-top:12px">Kirish</button>
+      </form>
+    </section>
+
+    <section id="app" hidden>
+      <div class="tabs">
+        <button id="tab-products" class="active">Mahsulotlar</button>
+        <button id="tab-orders">Buyurtmalar</button>
+        <button id="logout" class="ghost" style="margin-left:auto">Chiqish</button>
+      </div>
+
+      <div id="view-products">
+        <form id="product-form" class="admin-form">
+          <input name="name" placeholder="Nomi" required maxlength="80">
+          <input name="price" type="number" placeholder="Narxi (so'm)" required min="1">
+          <input name="unit" placeholder="Birlik (dona, kg)" maxlength="20">
+          <input name="category" placeholder="Kategoriya" maxlength="40">
+          <button type="submit" id="save-btn">Qo'shish</button>
+          <button type="button" id="cancel-edit" class="ghost" hidden>Bekor qilish</button>
+        </form>
+        <div class="scroll-x">
+          <table>
+            <thead><tr><th>Nomi</th><th>Narxi</th><th>Birlik</th><th>Kategoriya</th><th></th></tr></thead>
+            <tbody id="product-rows"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="view-orders" hidden></div>
+      <div id="msg"></div>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
